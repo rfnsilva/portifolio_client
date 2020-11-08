@@ -58,7 +58,7 @@ export const MenuLink = styled.div`
   cursor: pointer;
 
   &:hover {
-    color: #01bf71;
+    color: ${props => props.theme.colors.primary};
     transition: 0.2s ease-in-out;
   }
 `
@@ -71,10 +71,10 @@ export const MenuBtnWrapper = styled.div`
 // transformar isso em um link
 export const MenuBtn = styled.div`
   border-radius: 50px;
-  background: #01bf71;
+  background: ${props => props.theme.colors.primary};
   white-space: nowrap;
   padding: 16px 64px;
-  color: #010606;
+  color: ${props => props.theme.colors.background};
   font-size: 16px;
   outline: none;
   border: none;
@@ -85,6 +85,6 @@ export const MenuBtn = styled.div`
   &:hover {
     transition: all 0.2s ease-in-out;
     background: #fff;
-    color: #010606;
+    color: ${props => props.theme.colors.background};
   }
 `

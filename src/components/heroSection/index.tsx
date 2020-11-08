@@ -12,12 +12,7 @@ import {
   ArrowRight
 } from './styles'
 
-export interface Props {
-  primary?: boolean
-  dark?: boolean
-}
-
-const HeroSection: React.FC<Props> = ({ primary, dark }) => {
+const HeroSection: React.FC = () => {
   const [hover, setHover] = useState(false)
 
   const onHover = () => {
@@ -44,13 +39,8 @@ const HeroSection: React.FC<Props> = ({ primary, dark }) => {
         </HeroP>
 
         <HeroWrapper>
-          <Button
-            primary={primary}
-            dark={dark}
-            onMouseEnter={onHover}
-            onMouseLeave={onHover}
-          >
-            Get started {hover ? <ArrowForward /> : <ArrowRight />}{' '}
+          <Button onMouseEnter={onHover} onMouseLeave={onHover}>
+            Get started {!hover ? <ArrowForward /> : <ArrowRight />}{' '}
           </Button>
         </HeroWrapper>
       </HeroContent>

@@ -39,7 +39,7 @@ export const Text = styled.div`
 `
 
 export const TopLine = styled.p`
-  color: #01bf71;
+  color: ${props => props.theme.colors.primary};
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;
@@ -75,7 +75,7 @@ export const BtnWrapper = styled.div`
 
 export const Button = styled.button`
   border-radius: 50px;
-  background: #01bf71;
+  background: ${props => props.theme.colors.primary};
   white-space: nowrap;
   padding: 14px 48px;
   color: #010606;
@@ -89,7 +89,7 @@ export const Button = styled.button`
 
   &:hover {
     transition: all 0.2s ease-in-out;
-    background: #01bf71;
+    background: ${props => props.theme.colors.primary};
   }
 `
 

@@ -1,8 +1,6 @@
 import styled from 'styled-components'
 import { MdArrowForward, MdKeyboardArrowRight } from 'react-icons/md'
 
-import { Props } from '.'
-
 export const Container = styled.div`
   background: #0c0c0c;
   display: flex;
@@ -91,12 +89,12 @@ export const HeroWrapper = styled.div`
   flex-direction: column;
   align-items: center;
 `
-export const Button = styled.button<Props>`
+export const Button = styled.button`
   border-radius: 50px;
-  background: ${props => (props.primary ? '#01bf71' : '#010606')};
+  background: ${props => props.theme.colors.primary};
   white-space: nowrap;
   padding: 14px 48px;
-  color: ${props => (props.dark ? '#010606' : '#fff')};
+  color: ${props => props.theme.colors.background};
   outline: none;
   border: none;
   cursor: pointer;
@@ -107,7 +105,8 @@ export const Button = styled.button<Props>`
 
   &:hover {
     transition: all 0.2s ease-in-out;
-    background: #01bf71;
+    background: ${props => props.theme.colors.primary};
+    color: #fff;
   }
 `
 

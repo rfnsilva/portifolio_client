@@ -62,7 +62,7 @@ export const Links = styled.div`
   cursor: pointer;
 
   &:hover {
-    color: #01bf71;
+    color: ${props => props.theme.colors.primary};
     transition: 0.3s ease-out;
   }
 `

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { FaBars } from 'react-icons/fa'
 
 import {
@@ -18,81 +18,52 @@ interface Props {
 }
 
 const NavBar: React.FC<Props> = ({ toggle }) => {
+  const [scrollNav, setScrollNav] = useState(false)
+
+  const changeScrollNav = () => {
+    if (window.scrollY >= 80) {
+      setScrollNav(true)
+    } else {
+      setScrollNav(false)
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', changeScrollNav)
+  }, [])
+
   return (
-    <>
+    <Container scrollNav={scrollNav}>
       <Wrapper>
-        <Container>
-          <Logo>dolla</Logo>
+        <Logo>dolla</Logo>
 
-          <MobileIcon onClick={toggle}>
-            <FaBars />
-          </MobileIcon>
+        <MobileIcon onClick={toggle}>
+          <FaBars />
+        </MobileIcon>
 
-          <NavMenu>
-            <NavItem>
-              <NavLink>Home</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink>Serviços</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink>About</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink>Contato</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink>Sign Up</NavLink>
-            </NavItem>
-          </NavMenu>
+        <NavMenu>
+          <NavItem>
+            <NavLink>Home</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink>Serviços</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink>About</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink>Contato</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink>Sign Up</NavLink>
+          </NavItem>
+        </NavMenu>
 
-          <NavBtn>
-            <NavBtnLink> Sign In </NavBtnLink>
-          </NavBtn>
-        </Container>
+        <NavBtn>
+          <NavBtnLink> Sign In </NavBtnLink>
+        </NavBtn>
       </Wrapper>
-
-      {/* <Container>
-        <img src={image} alt="logo do site" />
-
-        <label className="switch">
-          <input type="checkbox" onChange={handleChange} />
-          <div>
-            <span></span>
-          </div>
-        </label>
-
-        <nav>
-          <ul className="menuItems">
-            <li>
-              <a href="#" data-item="Home">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="#" data-item="About">
-                About
-              </a>
-            </li>
-            <li>
-              <a href="#" data-item="Projects">
-                Projetos
-              </a>
-            </li>
-            <li>
-              <a href="#" data-item="Blog">
-                Blog
-              </a>
-            </li>
-            <li>
-              <a href="#" data-item="Contact">
-                Contato
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </Container> */}
-    </>
+    </Container>
   )
 }
 

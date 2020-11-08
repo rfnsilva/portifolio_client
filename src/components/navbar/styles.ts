@@ -1,9 +1,10 @@
 import styled from 'styled-components'
 // import { Link } from 'react-scroll'
 
-export const Wrapper = styled.nav`
-  background: #000;
-  height: 80px;
+export const Container = styled.nav`
+  background: ${props => (props.scrollNav ? '#000' : 'transparent')};
+  /* height: 80px; */
+  height: ${props => (props.scrollNav ? '60px' : '80px')};
   margin-top: -80px;
   display: flex;
   justify-content: center;
@@ -12,13 +13,14 @@ export const Wrapper = styled.nav`
   position: sticky;
   top: 0;
   z-index: 10;
+  transition: all 0.2s ease-in-out;
 
   @media (max-width: 960px) {
     transition: 0.8s all ease;
   }
 `
 
-export const Container = styled.div`
+export const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   height: 80px;
@@ -72,7 +74,7 @@ export const NavItem = styled.li`
   height: 80px;
 `
 /* transformar isso em um link */
-export const NavLink = styled.div`
+export const NavLink = styled.a`
   color: #fff;
   display: flex;
   align-items: center;
@@ -82,7 +84,12 @@ export const NavLink = styled.div`
   cursor: pointer;
 
   &:active {
-    border-bottom: 3px solid #01bf71;
+    border-bottom: 3px solid ${props => props.theme.colors.primary};
+  }
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    color: ${props => props.theme.colors.primary};
   }
 `
 
@@ -97,10 +104,10 @@ export const NavBtn = styled.nav`
 
 export const NavBtnLink = styled.div`
   border-radius: 50px;
-  background: #01bf71;
+  background: ${props => props.theme.colors.primary};
   white-space: nowrap;
   padding: 10px 22px;
-  color: #010606;
+  color: #fff;
   font-size: 16px;
   outline: none;
   border: none;
@@ -111,6 +118,6 @@ export const NavBtnLink = styled.div`
   &:hover {
     transition: all 0.2s ease-in-out;
     background: #fff;
-    color: #010606;
+    color: ${props => props.theme.colors.background};
   }
 `
