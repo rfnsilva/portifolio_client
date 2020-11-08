@@ -74,9 +74,11 @@ export const ServicesH1 = styled.h1`
 export const ServicesH2 = styled.h2`
   font-size: 1rem;
   margin-bottom: 10px;
+  color: ${props => props.theme.colors.color_black};
 `
 
 export const ServicesP = styled.p`
   font-size: 1rem;
   text-align: center;
+  color: ${props => props.theme.colors.color_black};
 `

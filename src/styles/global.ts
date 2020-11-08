@@ -16,7 +16,7 @@ export default createGlobalStyle`
 
     font: 400 16px Roboto, sans-serif;
     background: ${props => props.theme.colors.background};
-    color: ${props => props.theme.colors.text_gray};
+    color: ${props => props.theme.colors.color_white};
   }
 
   *, button, input {
