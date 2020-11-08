@@ -25,7 +25,7 @@ import {
 
 const footer: React.FC = () => {
   return (
-    <Container>
+    <Container id="footer">
       <Wrapper>
         <LinksContainer>
           <LinksWrapper>

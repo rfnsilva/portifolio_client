@@ -20,7 +20,7 @@ const HeroSection: React.FC = () => {
   }
 
   return (
-    <Container>
+    <Container id="heroSection">
       <HeroBg>
         <video
           autoPlay
@@ -40,7 +40,7 @@ const HeroSection: React.FC = () => {
 
         <HeroWrapper>
           <Button onMouseEnter={onHover} onMouseLeave={onHover}>
-            Get started {!hover ? <ArrowForward /> : <ArrowRight />}{' '}
+            Get started {hover ? <ArrowForward /> : <ArrowRight />}{' '}
           </Button>
         </HeroWrapper>
       </HeroContent>

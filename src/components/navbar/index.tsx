@@ -43,19 +43,19 @@ const NavBar: React.FC<Props> = ({ toggle }) => {
 
         <NavMenu>
           <NavItem>
-            <NavLink>Home</NavLink>
+            <NavLink href="/#heroSection">Home</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink>Serviços</NavLink>
+            <NavLink href="/#servicesSection">Serviços</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink>About</NavLink>
+            <NavLink href="/#infoSection">About</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink>Contato</NavLink>
+            <NavLink href="/">Contato</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink>Sign Up</NavLink>
+            <NavLink href="/">Sign Up</NavLink>
           </NavItem>
         </NavMenu>
 

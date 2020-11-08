@@ -18,7 +18,7 @@ import {
 
 const infoSection: React.FC = () => {
   return (
-    <Container>
+    <Container id="infoSection">
       <Wrapper>
         <InfoRow>
           <Col1>
