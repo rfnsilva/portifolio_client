@@ -1,14 +1,17 @@
 import React, { useState } from 'react'
 import Head from 'next/head'
+import dynamic from 'next/dynamic'
 
 import NavBar from '../components/navbar'
-import MenuToggle from '../components/menuToggle'
 import HeroSection from '../components/heroSection'
 import InfoSection from '../components/infoSection'
 import ServicesSection from '../components/servicesSection'
 import Footer from '../components/footer'
 
 import { Container } from '../styles/pages/index'
+
+import { SKILLS } from '../config/dataSkills'
+const SkillSection = dynamic(() => import('../components/skillsSection'))
 
 /*
 export async function getServerSideProps(ctx) {
@@ -36,6 +39,7 @@ export default function Home() {
       <NavBar />
       <HeroSection />
       <InfoSection />
+      <SkillSection data={SKILLS} />
       <ServicesSection />
       <Footer />
     </Container>

@@ -14,7 +14,7 @@ import {
 const servicesSection: React.FC = () => {
   return (
     <Container id="servicesSection">
-      <ServicesH1>Outros Serviços</ServicesH1>
+      <ServicesH1>Serviços</ServicesH1>
       <Wrapper>
         <Card>
           <Icon>

@@ -31,16 +31,16 @@ const HeroSection: React.FC = () => {
       </HeroBg>
 
       <HeroContent>
-        <HeroH1>Virtual Banking Made Easy</HeroH1>
+        <HeroH1>What is Lorem Ipsum</HeroH1>
 
         <HeroP>
-          Sign up for a new account today and receive $250 in credit towards
-          your next payment
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has.
         </HeroP>
 
         <HeroWrapper>
           <Button onMouseEnter={onHover} onMouseLeave={onHover}>
-            Get started {hover ? <ArrowForward /> : <ArrowRight />}{' '}
+            Ver Mais {hover ? <ArrowForward /> : <ArrowRight />}{' '}
           </Button>
         </HeroWrapper>
       </HeroContent>

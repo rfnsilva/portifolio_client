@@ -23,14 +23,14 @@ const infoSection: React.FC = () => {
         <InfoRow>
           <Col1>
             <Text>
-              <TopLine>Premium Bank</TopLine>
-              <Heading>Unlimeted transactions with zero fees</Heading>
+              <TopLine>Lorem Ipsum</TopLine>
+              <Heading>simply dummy text of the printing and</Heading>
               <Subtitle>
-                Get acess to our exclusive app that allows you to send unlimited
-                transactions without getting charged any fees.
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum.
               </Subtitle>
               <BtnWrapper>
-                <Button>Get started</Button>
+                <Button>Ver Mais</Button>
               </BtnWrapper>
             </Text>
           </Col1>

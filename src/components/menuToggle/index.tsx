@@ -25,11 +25,11 @@ const MenuToggle: React.FC<Props> = ({ isOpen, toggle }) => {
 
       <Wrapper>
         <Menu>
-          <MenuLink>Home</MenuLink>
-          <MenuLink>Serviços</MenuLink>
-          <MenuLink>About</MenuLink>
-          <MenuLink>Contato</MenuLink>
-          <MenuLink>Sign Up</MenuLink>
+          <MenuLink href="/#heroSection">Home</MenuLink>
+          <MenuLink href="/#servicesSection">Serviços</MenuLink>
+          <MenuLink href="/#infoSection">About</MenuLink>
+          <MenuLink href="/">Contato</MenuLink>
+          <MenuLink href="/">Sign Up</MenuLink>
         </Menu>
 
         <MenuBtnWrapper>

@@ -67,8 +67,8 @@ const footer: React.FC = () => {
 
         <SocialMedia>
           <SocialMediaWrapper>
-            <SocialLogo>dolla</SocialLogo>
-            <WebSite>dolla @ {new Date().getFullYear()}</WebSite>
+            <SocialLogo>Ricardo</SocialLogo>
+            <WebSite>Ricardo Dev @ {new Date().getFullYear()}</WebSite>
             <SocialIcons>
               <SocialIconLink href="#" target="_blank" arial-label="facebook">
                 <FaFacebook />

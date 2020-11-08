@@ -16,7 +16,8 @@
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": {
-      "jsx": true
+      "jsx": true,
+      "js": true
     },
     "ecmaVersion": 12,
     "sourceType": "module"
@@ -30,6 +31,7 @@
     "prettier/prettier": "error",
     "space-before-function-paren": "off",
     "react/prop-types": "off",
+    "wrap-iife": ["error", "outside"],
 
     // note you must disable the base rule as it can report incorrect errors
     "no-use-before-define": "off",

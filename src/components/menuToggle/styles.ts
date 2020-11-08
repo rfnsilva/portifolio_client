@@ -46,7 +46,7 @@ export const Menu = styled.div`
 `
 
 // transformar isso em um link
-export const MenuLink = styled.div`
+export const MenuLink = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;

@@ -39,7 +39,7 @@ const NavBar: React.FC = () => {
       <MenuToggle isOpen={isOpen} toggle={toggle} />
       <Container scrollNav={scrollNav}>
         <Wrapper>
-          <Logo>dolla</Logo>
+          <Logo>Ricardo</Logo>
 
           <MobileIcon onClick={toggle}>
             <FaBars />
@@ -50,16 +50,16 @@ const NavBar: React.FC = () => {
               <NavLink href="/#heroSection">Home</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/#servicesSection">Serviços</NavLink>
-            </NavItem>
-            <NavItem>
               <NavLink href="/#infoSection">About</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/">Contato</NavLink>
+              <NavLink href="/#skillsSection">Skills</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/">Sign Up</NavLink>
+              <NavLink href="/#servicesSection">Serviços</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/">Contato</NavLink>
             </NavItem>
           </NavMenu>
 

@@ -53,6 +53,8 @@ export default class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
+
+          <script src="js/orb.js" />
         </body>
       </Html>
     )

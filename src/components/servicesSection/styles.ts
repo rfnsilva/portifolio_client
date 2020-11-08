@@ -6,7 +6,7 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: ${props => props.theme.colors.background};
+  background: ${props => props.theme.colors.background_white};
 
   @media (max-width: 768px) {
     height: 1100px;
@@ -37,7 +37,7 @@ export const Wrapper = styled.div`
 `
 
 export const Card = styled.div`
-  background: #fff;
+  background: ${props => props.theme.colors.background_white};
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -45,7 +45,7 @@ export const Card = styled.div`
   border-radius: 10px;
   max-height: 340px;
   padding: 30px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.5);
   transition: all 0.2s ease-in-out;
 
   &:hover {
@@ -63,7 +63,7 @@ export const Icon = styled.div`
 
 export const ServicesH1 = styled.h1`
   font-size: 2.5rem;
-  color: #fff;
+  color: ${props => props.theme.colors.color_black};
   margin-bottom: 64px;
 
   @media (max-width: 480px) {
