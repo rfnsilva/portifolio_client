@@ -27,20 +27,13 @@ export async function getServerSideProps(ctx) {
 */
 
 export default function Home() {
-  const [isOpen, setIsOpen] = useState<boolean>(false)
-
-  const toggle = () => {
-    setIsOpen(!isOpen)
-  }
-
   return (
     <Container>
       <Head>
         <title>Home</title>
       </Head>
 
-      <MenuToggle isOpen={isOpen} toggle={toggle} />
-      <NavBar toggle={toggle} />
+      <NavBar />
       <HeroSection />
       <InfoSection />
       <ServicesSection />

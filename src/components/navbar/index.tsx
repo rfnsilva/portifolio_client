@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { FaBars } from 'react-icons/fa'
+import MenuToggle from '../menuToggle'
 
 import {
   Wrapper,
@@ -13,12 +14,13 @@ import {
   NavBtnLink
 } from './styles'
 
-interface Props {
-  toggle?: any
-}
+const NavBar: React.FC = () => {
+  const [scrollNav, setScrollNav] = useState<boolean>(false)
+  const [isOpen, setIsOpen] = useState<boolean>(false)
 
-const NavBar: React.FC<Props> = ({ toggle }) => {
-  const [scrollNav, setScrollNav] = useState(false)
+  const toggle = () => {
+    setIsOpen(!isOpen)
+  }
 
   const changeScrollNav = () => {
     if (window.scrollY >= 80) {
@@ -33,37 +35,40 @@ const NavBar: React.FC<Props> = ({ toggle }) => {
   }, [])
 
   return (
-    <Container scrollNav={scrollNav}>
-      <Wrapper>
-        <Logo>dolla</Logo>
+    <>
+      <MenuToggle isOpen={isOpen} toggle={toggle} />
+      <Container scrollNav={scrollNav}>
+        <Wrapper>
+          <Logo>dolla</Logo>
 
-        <MobileIcon onClick={toggle}>
-          <FaBars />
-        </MobileIcon>
+          <MobileIcon onClick={toggle}>
+            <FaBars />
+          </MobileIcon>
 
-        <NavMenu>
-          <NavItem>
-            <NavLink href="/#heroSection">Home</NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink href="/#servicesSection">Serviços</NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink href="/#infoSection">About</NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink href="/">Contato</NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink href="/">Sign Up</NavLink>
-          </NavItem>
-        </NavMenu>
+          <NavMenu>
+            <NavItem>
+              <NavLink href="/#heroSection">Home</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/#servicesSection">Serviços</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/#infoSection">About</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/">Contato</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/">Sign Up</NavLink>
+            </NavItem>
+          </NavMenu>
 
-        <NavBtn>
-          <NavBtnLink> Sign In </NavBtnLink>
-        </NavBtn>
-      </Wrapper>
-    </Container>
+          <NavBtn>
+            <NavBtnLink> Sign In </NavBtnLink>
+          </NavBtn>
+        </Wrapper>
+      </Container>
+    </>
   )
 }
 
