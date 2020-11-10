@@ -31,7 +31,7 @@ const HeroSection: React.FC = () => {
       </HeroBg>
 
       <HeroContent>
-        <HeroH1>What is Lorem Ipsum</HeroH1>
+        <HeroH1>Site em construção!!!</HeroH1>
 
         <HeroP>
           Lorem Ipsum is simply dummy text of the printing and typesetting
