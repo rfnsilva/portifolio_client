@@ -24,7 +24,7 @@ const infoSection: React.FC = () => {
           <Col1>
             <Text>
               <TopLine>ABOUT ME</TopLine>
-              <Heading>simply dummy text of the printing and</Heading>
+              <Heading>informações profissionais</Heading>
               <Subtitle>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum.
