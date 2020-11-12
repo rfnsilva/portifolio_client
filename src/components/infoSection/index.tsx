@@ -23,7 +23,7 @@ const infoSection: React.FC = () => {
         <InfoRow>
           <Col1>
             <Text>
-              <TopLine>Lorem Ipsum</TopLine>
+              <TopLine>ABOUT ME</TopLine>
               <Heading>simply dummy text of the printing and</Heading>
               <Subtitle>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
