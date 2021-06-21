@@ -1,5 +1,9 @@
 import styled from 'styled-components'
 
+interface Props {
+  size: number
+}
+
 export const Container = styled.div`
   color: #fff;
   background: ${props => props.theme.colors.background};
@@ -74,13 +78,16 @@ export const Col1 = styled.div`
   grid-area: col1;
 `
 
-export const Col2 = styled.div`
+export const Col2 = styled.div<Props>`
   margin-bottom: 15px;
   padding: 0 15px;
   grid-area: col2;
 
-  /* canvas {
-    width: 500px;
-    height: 100%;
-  } */
+  canvas {
+    width: ${props => (props.size > 421 && props.size > 880 ? '400px' : '500px')};
+    @media (max-width: 420px) {
+      width: 100% !important;
+    }
+  }
+
 `

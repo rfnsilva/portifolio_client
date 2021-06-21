@@ -19,13 +19,16 @@ interface Size {
   height: number
 }
 
+export interface Props {
+  sizeWidth: number
+}
+
 const infoSection: React.FC<OrbProps> = ({ data = [] }) => {
   const orbRef = useRef<HTMLDivElement | null>(null)
   const [size, setSize] = useState<Size>({ height: 500, width: 500 })
 
   const changeResize = () => {
     if (window.innerWidth <= 880) {
-      console.log('aui')
       setSize({ height: 400, width: 400 })
     } else {
       setSize({ height: 500, width: 500 })
@@ -63,9 +66,9 @@ const infoSection: React.FC<OrbProps> = ({ data = [] }) => {
             </Text>
           </Col1>
 
-          <Col2>
+          <Col2 size={size.width}>
             <div ref={orbRef}>
-              <canvas id="orb-canvas" width={size.width} height={size.height}>
+              <canvas id="orb-canvas" height={size.height}>
                 <ul>
                   {data.length &&
                     data.map((item, key) => (
