@@ -84,10 +84,10 @@ export const Col2 = styled.div<Props>`
   grid-area: col2;
 
   canvas {
-    width: ${props => (props.size > 421 && props.size > 880 ? '400px' : '500px')};
+    width: ${props =>
+      props.size > 421 && props.size > 880 ? '400px' : '500px'};
     @media (max-width: 420px) {
       width: 100% !important;
     }
   }
-
 `

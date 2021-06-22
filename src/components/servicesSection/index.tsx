@@ -79,6 +79,38 @@ const servicesSection: React.FC = () => {
             2+, react, react-native...
           </ServicesP>
         </Card>
+
+        <Card>
+          <Icon>
+            <Image
+              src="/car.svg"
+              width="400"
+              height="400"
+              alt="Profile Picture"
+            />
+          </Icon>
+          <ServicesH2>Desenvolvedor Front-End</ServicesH2>
+          <ServicesP>
+            Especialista em HTML5, JavaScript, CSS, jQuery, BootStrap, Angular
+            2+, react, react-native...
+          </ServicesP>
+        </Card>
+
+        <Card>
+          <Icon>
+            <Image
+              src="/car.svg"
+              width="400"
+              height="400"
+              alt="Profile Picture"
+            />
+          </Icon>
+          <ServicesH2>Desenvolvedor Front-End</ServicesH2>
+          <ServicesP>
+            Especialista em HTML5, JavaScript, CSS, jQuery, BootStrap, Angular
+            2+, react, react-native...
+          </ServicesP>
+        </Card>
       </Wrapper>
     </Container>
   )

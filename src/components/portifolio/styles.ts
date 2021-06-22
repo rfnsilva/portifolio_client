@@ -6,14 +6,14 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: ${props => props.theme.colors.background_white};
+  background: ${props => props.theme.colors.background};
 
   @media (max-width: 768px) {
-    height: 2091px;
+    height: 2271px;
   }
 
   @media (max-width: 480px) {
-    height: 2200px;
+    height: 2282px;
   }
 
   @media (max-width: 1000px) and (min-width: 769px) {
@@ -22,7 +22,7 @@ export const Container = styled.div`
 `
 
 export const Wrapper = styled.div`
-  max-width: 1000px;
+  /*max-width: 1000px;*/
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -42,7 +42,7 @@ export const Wrapper = styled.div`
 
 export const Card = styled.div`
   height: 100%;
-  background: ${props => props.theme.colors.background_white};
+  background: ${props => props.theme.colors.color_white};
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -61,29 +61,17 @@ export const Card = styled.div`
 `
 
 export const Icon = styled.div`
-  height: 160px;
-  width: 160px;
+  height: 260px;
+  width: 260px;
   margin-bottom: 10px;
 `
 
-export const ServicesH1 = styled.h1`
+export const PortifolioH1 = styled.h1`
   font-size: 2.5rem;
-  color: ${props => props.theme.colors.color_black};
+  color: #fff;
   margin-bottom: 64px;
 
   @media (max-width: 480px) {
     font-size: 2rem;
   }
-`
-
-export const ServicesH2 = styled.h2`
-  font-size: 1rem;
-  margin-bottom: 10px;
-  color: ${props => props.theme.colors.color_black};
-`
-
-export const ServicesP = styled.p`
-  font-size: 1rem;
-  text-align: center;
-  color: ${props => props.theme.colors.color_black};
 `
