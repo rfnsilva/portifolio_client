@@ -59,7 +59,7 @@ const NavBar: React.FC = () => {
               <NavLink href="/#servicesSection">Serviços</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/">Contato</NavLink>
+              <NavLink href="/#contatoSection">Contato</NavLink>
             </NavItem>
           </NavMenu>
 

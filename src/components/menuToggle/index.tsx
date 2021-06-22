@@ -28,7 +28,7 @@ const MenuToggle: React.FC<Props> = ({ isOpen, toggle }) => {
           <MenuLink href="/#heroSection">Home</MenuLink>
           <MenuLink href="/#servicesSection">Serviços</MenuLink>
           <MenuLink href="/#infoSection">About</MenuLink>
-          <MenuLink href="/">Contato</MenuLink>
+          <MenuLink href="/#contatoSection">Contato</MenuLink>
           <MenuLink href="/">Sign Up</MenuLink>
         </Menu>
 

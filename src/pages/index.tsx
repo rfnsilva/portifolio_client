@@ -7,6 +7,7 @@ import HeroSection from '../components/heroSection'
 import InfoSection from '../components/infoSection'
 import ServicesSection from '../components/servicesSection'
 import PortifolioSection from '../components/portifolio'
+import ContatoSection from '../components/contato'
 import Footer from '../components/footer'
 
 import { Container } from '../styles/pages/index'
@@ -43,6 +44,7 @@ export default function Home() {
       <SkillSection data={SKILLS} />
       <ServicesSection />
       <PortifolioSection />
+      <ContatoSection />
       <Footer />
     </Container>
   )

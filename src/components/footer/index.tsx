@@ -27,7 +27,7 @@ const footer: React.FC = () => {
   return (
     <Container id="footer">
       <Wrapper>
-        <LinksContainer>
+        {/* <LinksContainer>
           <LinksWrapper>
             <LinksItems>
               <LinksItemsTitle>About Us</LinksItemsTitle>
@@ -63,7 +63,7 @@ const footer: React.FC = () => {
               <Links>about us</Links>
             </LinksItems>
           </LinksWrapper>
-        </LinksContainer>
+        </LinksContainer> */}
 
         <SocialMedia>
           <SocialMediaWrapper>
