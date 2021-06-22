@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  height: 800px;
+  height: 870px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,11 +9,11 @@ export const Container = styled.div`
   background: ${props => props.theme.colors.background_white};
 
   @media (max-width: 768px) {
-    height: 1100px;
+    height: 1380px;
   }
 
   @media (max-width: 480px) {
-    height: 1300px;
+    height: 1500px;
   }
 `
 
@@ -37,6 +37,7 @@ export const Wrapper = styled.div`
 `
 
 export const Card = styled.div`
+  height: 100%;
   background: ${props => props.theme.colors.background_white};
   display: flex;
   flex-direction: column;
